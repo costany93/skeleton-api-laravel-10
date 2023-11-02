@@ -1,0 +1,3 @@
+clone the project
+
+setup .env file 
