@@ -1,3 +1,48 @@
-clone the project
+installation process  laravel 10 api JWT authentification
 
-setup .env file 
+1- Clone the project
+
+git clone -b main https://github.com/costany93/skeleton-api-laravel-10.git
+
+2- Access to the clone directory and rename .env.example  to .env file
+
+mv .env.example .env
+
+3- Setup .env file with the database and server information, adjust following argument
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1 or DB host if it’s online host
+DB_PORT=3306
+DB_DATABASE=database name
+DB_USERNAME=root
+DB_PASSWORD=
+
+4-Add all dependencies
+
+composer install
+
+5- Make migration
+
+php artisan migrate
+
+6- Generate JWT secret key
+
+php artisan jwt:secret
+
+Project install successfully ready to use route
+Nb: In localhost change server address if it’s online
+
+http://127.0.0.1:8000/api/login 
+
+http://127.0.0.1:8000/api/register
+
+http://127.0.0.1:8000/api/logout
+
+http://127.0.0.1:8000/api/refresh
+
+
+Problem for installing? Click to the link bellow for all scratch process installation
+
+https://www.laravelia.com/post/laravel-10-jwt-complete-api-authentication-tutorial
+
+Thanks
